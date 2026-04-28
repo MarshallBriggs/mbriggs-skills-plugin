@@ -1,0 +1,18 @@
+{
+  "name": "mbriggs-skills",
+  "version": "1.2.0",
+  "description": "Marshall's Claude Code skills collection. UX playtesting with persona simulation, browser-based smoketests driven by git diff, exhaustive design grilling, and structured feedback reports. Bundles the Playwright MCP server.",
+  "author": {
+    "name": "Marshall Briggs",
+    "url": "https://github.com/MarshallBriggs"
+  },
+  "repository": "https://github.com/MarshallBriggs/mbriggs-skills-plugin",
+  "license": "MIT",
+  "keywords": ["ux", "playtest", "smoketest", "qa", "testing", "personas", "playwright", "mcp", "design"],
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    }
+  }
+}
