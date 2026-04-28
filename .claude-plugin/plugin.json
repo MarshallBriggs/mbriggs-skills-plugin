@@ -1,6 +1,5 @@
 {
   "name": "mbriggs-skills",
-  "version": "1.2.0",
   "description": "Marshall's Claude Code skills collection. UX playtesting with persona simulation, browser-based smoketests driven by git diff, exhaustive design grilling, and structured feedback reports. Bundles the Playwright MCP server.",
   "author": {
     "name": "Marshall Briggs",

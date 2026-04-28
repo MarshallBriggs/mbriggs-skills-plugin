@@ -31,6 +31,12 @@ Each skill is a self-contained directory under `skills/`. Everything a skill nee
 - Templates and examples for end-user customization go in `skills/{skill-name}/templates/`.
 - Zero runtime dependencies. Skills are pure markdown orchestration consumed by the Claude Code agent.
 
+## Versioning
+
+This plugin intentionally omits the `version` field in both `plugin.json` and the marketplace entry. Per the Claude Code marketplace docs, omitting `version` from a git-sourced plugin makes every commit on the default branch automatically register as a new version (using the commit SHA as the version identifier). Don't add `version` back — pushing is the release.
+
+End users still need to manually click the refresh icon in the VSCode Marketplaces tab + the update button in the Plugins tab to pull the latest. The Claude Code VSCode extension has no auto-update toggle.
+
 ## Contributing
 
 - Keep skills general-purpose. Domain-specific configuration belongs in project-local overrides, not in the plugin itself.
